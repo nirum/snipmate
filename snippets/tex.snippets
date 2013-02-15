@@ -20,14 +20,32 @@ snippet figure
 		\caption{${4}}
 		\label{fig:${5}}
 	\end{figure}
+# optimization problem
+snippet opt
+	\begin{equation*}
+		\begin{aligned}
+		& \text{${1:maximize}}
+		& & ${2:f(x)} \\
+		& \text{subject to}
+		& &   ${3:f_i(x) \preceq 0} \\
+		& & & ${4:h_i(x) = 0} \\
+		\end{aligned}
+	\end{equation*}
 # Equation
 snippet eq
+	\begin{equation*}
+		\begin{aligned}
+		${1}
+		\end{aligned}
+	\end{equation*}
+# equation array
+snippet eqa
 	\begin{eqnarray}
 		${1}
 	\end{eqnarray}
 # aligned equations
 snippet ==
-	&=&
+	&=
 # nonumber
 snippet nn
 	\nonumber
